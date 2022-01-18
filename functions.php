@@ -8,7 +8,7 @@ function theme_enqueue_styles() {
         'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         [],
-        wp_get_theme()->get('Version')
+        wp_get_theme()->get( 'Version' )
     );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 20 );
